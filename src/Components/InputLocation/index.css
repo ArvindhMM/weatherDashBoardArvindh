@@ -1,0 +1,59 @@
+.InputComponentContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.inputLocationContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+    align-items: center;
+    width: 75%;
+}
+.inputLocation{
+    padding: 5px;
+    text-shadow: 1;
+    text-transform: capitalize;
+    width: 50%;
+}
+
+.inputLocation:focus{
+    outline: none;
+}
+.inputLocation::placeholder{
+    text-transform: none;
+}
+.icons{
+    font-size: 20px;
+    margin-left: 5px;
+    width: 25px;
+}
+.icons:hover{
+    transition: ease-in;
+    font-size: 25px;
+}
+.degree{
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+.degree:hover{
+    scale: 1.25;
+    transition: ease-in;
+}
+.seperator{
+    font-size: large;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.tempContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 25%;
+}

@@ -1,0 +1,25 @@
+.forecastTop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+.toggleGraph{
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 5px;
+    width: 30px;
+}
+.toggleGraph:hover{
+    border-width: 1px;
+    border-radius: 3px;
+    transition: ease-in;
+    background-color: rgba(2, 68, 80, 0.966);
+}
+.horizontalLine{
+    margin-top: 0px;
+    margin-bottom: 5px;
+    color: white;
+    width: 1.5px;
+}
