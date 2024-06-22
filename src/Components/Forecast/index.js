@@ -32,7 +32,7 @@ const Forecast = ({title,data}) => {
       }))
 
 
-    {/* Custom label to display temperature on each points on the graph*/}
+    
       const CustomLabel = ({ x, y, value }) => {  
         return (
           <text x={x} y={y} dy={-4} fill="#ffffff" fontSize={12} textAnchor="middle">
@@ -58,7 +58,7 @@ const Forecast = ({title,data}) => {
                 <Tooltip  contentStyle={{ display: 'none' }} />
                 <Legend />
                 <Line type="monotone" dataKey="temperature"  stroke="#ffffff" >
-                <LabelList dataKey="temperature" position="top" content={<CustomLabel />} />
+                <LabelList dataKey="temperature" position="top" content={<CustomLabel />} /> {/* Custom label to display temperature on each points on the graph*/}
                 </Line>
             </LineChart>
             </ResponsiveContainer>

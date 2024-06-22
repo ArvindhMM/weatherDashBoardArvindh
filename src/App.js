@@ -1,4 +1,4 @@
-import { useState,useEffect } from 'react';
+import { useState,useEffect, useCallback } from 'react';
 import './App.css';
 import TopButtons from './Components/TopButtons'
 import InputLocation from './Components/InputLocation';
@@ -13,15 +13,15 @@ const  App = () => {
   const [units,setUnits] = useState('metric') //Initial Units
   const [weather,setWeather] = useState(null) 
 
-  const getWeather = async () => {
+  const getWeather = useCallback(async () => {
     await getFormattedWeatherData({...query, units}).then((data)=>{
       setWeather(data)
     });
-  }
+  },[query,units])
 
   useEffect(() => {
     getWeather();
-  },[query,units])
+  },[getWeather])
 
   let BackGround = ''
   const threshold = units === 'metric' ? 25:60;
