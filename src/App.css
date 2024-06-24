@@ -13,3 +13,16 @@
 .hot{
   background: linear-gradient(to bottom right, #D97706,#C2410C);
 }
+
+
+@media screen and (min-width:360px){
+  .App {
+    color: white;
+    padding-top: 15px;
+    padding-right: 1rem ;
+    padding-left: 1rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+}

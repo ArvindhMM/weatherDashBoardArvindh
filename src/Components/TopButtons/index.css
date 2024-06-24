@@ -10,7 +10,7 @@
 .button{
     border: none;
     background-color: transparent;
-    font-size: large;
+    font-size: 1.5rem;
     color: white;
     padding: 10px;
 }
@@ -18,4 +18,20 @@
     transition: ease-in;
     background-color: gray;
     border-radius: 20px;
+}
+@media screen and (max-width:568px){
+    .topbuttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .button{
+        border: none;
+        background-color: transparent;
+        color: white;
+        padding: 5px;
+        font-size: 1rem;
+    }
 }

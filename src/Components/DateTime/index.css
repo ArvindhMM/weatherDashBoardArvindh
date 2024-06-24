@@ -14,5 +14,26 @@
     margin-bottom: 10px;
 }
 .location{
-    font-size: clamp(20px,35px,50px);
+    font-size: clamp(1rem,1.5rem,2rem);
+    margin-bottom: 2px;
+}
+@media screen and (max-width:568px){
+    .DateTimeContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .locationContainer{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+    }
+    
 }

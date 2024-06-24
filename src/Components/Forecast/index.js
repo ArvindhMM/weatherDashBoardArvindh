@@ -51,7 +51,7 @@ const Forecast = ({title,data}) => {
         </div>
         <hr className='horizontalLine'/>
         {showLineChart ? (
-            <ResponsiveContainer  width="100%" height={200}>
+            <ResponsiveContainer  width="100%" height={300}>
             <LineChart data={Data}>
                 <XAxis dataKey="hour"  stroke="#ffffff" />
                 <YAxis  stroke="#ffffff"/>
@@ -63,7 +63,7 @@ const Forecast = ({title,data}) => {
             </LineChart>
             </ResponsiveContainer>
         ) : (
-            <ResponsiveContainer  width="100%" height={200}>
+            <ResponsiveContainer  width="100%" height={300}>
             <BarChart data={Data}>
             
                 <XAxis dataKey="hour"  stroke="#ffffff"/>
