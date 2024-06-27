@@ -70,7 +70,7 @@ const Forecast = ({title,data}) => {
                 <YAxis  stroke="#ffffff"/>
                 <Tooltip  contentStyle={{ display: 'none' }} />
                 <Legend />
-                <Bar dataKey="temperature" fill='#0545ab'  stroke="#ffffff">
+                <Bar dataKey="temperature" fill='#43AA8B'  stroke="#ffffff">
                 <LabelList dataKey="temperature" content={<CustomLabel />} />
                 </Bar>
             </BarChart>
